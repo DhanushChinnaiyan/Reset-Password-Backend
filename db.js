@@ -12,7 +12,7 @@ const dataBaseConnection =() => {
         useUnifiedTopology:true
     }
     try {
-        mongoose.connect(process.env.MONGODB_URI,params)
+        mongoose.connect(process.env.MONGO_URL,params)
     console.log("mongoDB connected")
         
     } catch (error) {
