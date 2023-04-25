@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "hall-booking",
+    "name": "forgot-password",
     "builds":[
       {
           "src":"./index.js",
