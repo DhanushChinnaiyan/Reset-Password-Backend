@@ -3,7 +3,7 @@ import  Token  from '../module/Token.js'
 
 const router = express.Router()
 
-router.put("/:id",async(request,response)=>{
+router.get("/:id",async(request,response)=>{
     try {
 
         // finding the user token

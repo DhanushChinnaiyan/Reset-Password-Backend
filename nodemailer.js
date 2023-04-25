@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer'
 
 const mail = (randomOTP,Useremail) => {
     const transporter = nodemailer.createTransport({
-        service:"gmail",
+        host: "my.smtp.host",
         port:"465",
         auth: {
             user:"dhanushms4021@gmail.com",
