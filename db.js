@@ -12,7 +12,7 @@ const dataBaseConnection =() => {
         useUnifiedTopology:true
     }
     try {
-        mongoose.connect(process.env.MONGODB_URL,params)
+        mongoose.connect("mongodb+srv://dhanush:621417114021@cluster0.yv1vvqj.mongodb.net/PASSWORDRESET?retryWrites=true&w=majority",params)
     console.log("mongoDB connected")
         
     } catch (error) {
