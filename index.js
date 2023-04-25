@@ -2,7 +2,6 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors'
 import dataBaseConnection from './db.js';
-import mail from './nodemailer.js';
 import { userSignupRouter } from './routers/Signup.js';
 import { forgotPasswordRouter } from './routers/Forgot.js';
 import { resetPasswordRouter } from './routers/Verify.js';
