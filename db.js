@@ -10,7 +10,7 @@ const params = {
 }
 
 const dataBaseConnection =() => {
-    mongoose.connect(process.env.MONGO_URL,params)
+    mongoose.connect(process.env.MONGODB_URL,params)
     console.log("mongoDB connected")
 }
 
