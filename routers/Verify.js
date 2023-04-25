@@ -7,7 +7,7 @@ router.get("/:id",async(request,response)=>{
     try {
 
         // finding the user token
-        const tokens = await Token.findOne({userId:request.params.id})
+        const tokens = await Token.findById(request.params.id)
         if(!tokens){
             return response.status(400).json({message:"Password reset timed out"})
         }
