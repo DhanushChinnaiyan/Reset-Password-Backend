@@ -20,7 +20,9 @@ app.use(express.json())
 
 // mail
 // mail()
-
+app.use("/",(request,response)=>{
+   response.status(200).json({message:"WELCOME"})
+})
 
 // Routers
 // signup router
